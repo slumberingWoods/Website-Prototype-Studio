@@ -17,7 +17,7 @@
 		</ul>
 		<ul class="menu menu-horizontal bg-base-200 rounded-box">
 			<li>
-			  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" aria-label="Youtube">
+			  <a class="tooltip">
 				<svg xmlns="http://www.w3.org/2000/svg" 
 				width="24" height="24" viewBox="0 0 24 24" 
 				fill="none" stroke="currentColor" 
@@ -31,7 +31,7 @@
 			  </a>
 			</li>
 			<li>
-			  <a href="https://www.youtube.com/watch?v=3BFTio5296w&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" aria-label="Youtube">
+			  <a class="tooltip">
 				<svg xmlns="http://www.w3.org/2000/svg" 
 				width="24" 
 				height="24" 
@@ -49,18 +49,18 @@
 			  </a>
 			</li>
 			<li>
-			  <a href="https://www.youtube.com/watch?v=XGxIE1hr0w4&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" aria-label="Youtube">
-				<svg xmlns="http://www.w3.org/2000/svg" 
-				width="24" 
-				height="24" 
-				viewBox="0 0 24 24" 
-				fill="none" 
-				stroke="currentColor" 
-				stroke-width="2" 
-				stroke-linecap="round"
-				stroke-linejoin="round" 
-				class="feather feather-twitter">
-				<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+			  <a class="tooltip">
+				<svg
+				  xmlns="http://www.w3.org/2000/svg"
+				  class="h-5 w-5"
+				  fill="none"
+				  viewBox="0 0 24 24"
+				  stroke="currentColor">
+				  <path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
 				</svg>
 			  </a>
 			</li>
