@@ -1,13 +1,11 @@
 <div class="bg-gray-700">
     <div class="mx-12 flex flex-col justify-center items-center bg-slate-400 h-screen">
-        <div class="content-center grow-7">
+        <div class="content-center">
             <div class="text-center">
-                <p class="text-5xl">Website Prototype</p>
-                <br>
-                <p class="">This is a funky motto</p>
+                <h1 class="text-5xl">Website Prototype</h1>
             </div>
         </div>
-        <div class="text-center content-center grow-2">
+        <div class="mt-100 text-center content-center">
             <form>
                 <h6 class="footer-title">Newsletter</h6>
                 <fieldset class="w-80">
@@ -16,7 +14,7 @@
                     type="text"
                     placeholder="username@site.com"
                     class="input input-bordered join-item" />
-                    <button class="btn btn-primary join-item bg-slate-600">Subscribe</button>
+                    <button class="btn btn-primary join-item">Subscribe</button>
                 </div>
             </fieldset>
         </form>

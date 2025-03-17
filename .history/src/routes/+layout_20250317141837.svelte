@@ -15,7 +15,7 @@
 			<li><a href="/">Blog</a></li>
 			<li><a href="/">Contact</a></li>
 		</ul>
-		<ul class="menu menu-horizontal bg-slate-800 rounded-box">
+		<ul class="menu menu-horizontal bg-base-200 rounded-box">
 			<li>
 			  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" aria-label="Youtube">
 				<svg xmlns="http://www.w3.org/2000/svg" 
@@ -80,7 +80,7 @@
 		</nav>
 		<nav class="md:place-self-center md:justify-self-end mx-12">
 			<h6 class="footer-title">Socials</h6>
-			<ul class="menu menu-horizontal bg-slate-800 rounded-box">
+			<ul class="menu menu-horizontal bg-base-200 rounded-box">
 				<li>
 				  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" aria-label="Youtube">
 					<svg xmlns="http://www.w3.org/2000/svg" 

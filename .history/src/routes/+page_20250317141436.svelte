@@ -2,9 +2,7 @@
     <div class="mx-12 flex flex-col justify-center items-center bg-slate-400 h-screen">
         <div class="content-center grow-7">
             <div class="text-center">
-                <p class="text-5xl">Website Prototype</p>
-                <br>
-                <p class="">This is a funky motto</p>
+                <h1 class="text-5xl">Website Prototype</h1>
             </div>
         </div>
         <div class="text-center content-center grow-2">
