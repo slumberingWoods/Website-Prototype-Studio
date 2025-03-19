@@ -1,25 +1,27 @@
 <div class="bg-gray-700">
-    <div class="mx-12 flex flex-col justify-center items-center bg-slate-400 h-screen">
-        <div class="content-center grow-7">
+    <div class="mx-12 flex flex-col items-center bg-slate-400 h-fit">
+        <div class="my-12">
             <div class="text-center">
-                <p class="text-5xl">Website Prototype</p>
-                <br>
-                <p class="">This is a funky motto</p>
+                <p class="text-3xl">Games</p>
             </div>
         </div>
-        <div class="text-center content-center grow-2">
-            <form>
-                <h6 class="footer-title">Newsletter</h6>
-                <fieldset class="w-80">
-                    <div class="join">
-                    <input
-                    type="text"
-                    placeholder="username@site.com"
-                    class="input input-bordered join-item" />
-                    <button class="btn btn-primary join-item bg-slate-600">Subscribe</button>
+        <div class="flex flex-col items-center w-full gap-y-12 my-12">
+            <div class="flex flex-row items-center justify-center bg-neutral-900/35 w-full">
+                <img class="h-48 w-96 object-cover my-12 mx-12" src="../src/img/pexels-alscre-3977908.jpg"><img/>
+                <div class="text-center content-center grow 3">
+                    <p class="text-2xl">Game #1</p>
+                    <br>
+                    <p>This is a game about a gamer and his game. I have run out of things to say about the game.</p>
                 </div>
-            </fieldset>
-        </form>
+            </div>
+            <div class="flex flex-row items-center justify-center bg-neutral-900/35 w-full">
+                <img class="h-48 w-96 object-cover my-12 mx-12" src="../src/img/pexels-mart-production-8885140.jpg"><img/>
+                <div class="text-center content-center grow 3">
+                    <p class="text-2xl">Game #2</p>
+                    <br>
+                    <p>This is a game about a gamer and his game. I have run out of things to say about the game.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
