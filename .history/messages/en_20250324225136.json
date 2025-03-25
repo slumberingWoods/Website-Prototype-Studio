@@ -2,7 +2,7 @@
   "$schema": "https://inlang.com/schema/inlang-message-format",
   "example_message": "Hello world {username}",
   "legal": "Legal",
-  "column_legal":{ 
+  "column_legal": { 
     "term": "Conditions d'utilisation", 
     "private": "Politique de confidentialité", 
     "press": "Dossier de presse"

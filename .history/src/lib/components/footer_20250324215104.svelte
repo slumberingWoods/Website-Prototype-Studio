@@ -1,12 +1,9 @@
 <script>
-	import { m } from "../paraglide/messages";
-	import { setLocale } from "../paraglide/runtime.js";
 </script>
-
 <div>
 	<footer class="footer sm:footer-horizontal bg-slate-900 text-neutral-content p-12">
 		<nav class="md:place-self-center md:justify-self-start mx-12">
-			<h6 class="footer-title">{m.legal()}</h6>
+			<h6 class="footer-title">Legal</h6>
 			<a href="/" class="link link-hover">Terms of use</a>
 			<a href="/" class="link link-hover">Privacy policy</a>
 			<a href="/" class="link link-hover">Press Kit</a>
@@ -15,7 +12,7 @@
 			<h6 class="footer-title">Socials</h6>
 			<ul class="menu menu-horizontal bg-slate-800 rounded-box">
 				<li>
-					<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" aria-label="Youtube">
+				  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" aria-label="Youtube">
 					<svg xmlns="http://www.w3.org/2000/svg" 
 					width="24" height="24" viewBox="0 0 24 24" 
 					fill="none" stroke="currentColor" 
@@ -26,7 +23,7 @@
 					<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
 					<polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
 					</svg>
-				</a>
+				  </a>
 				</li>
 				<li>
 				  <a href="https://www.youtube.com/watch?v=3BFTio5296w&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" aria-label="Youtube">

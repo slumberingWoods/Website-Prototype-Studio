@@ -1,8 +1,6 @@
 <script>
 	import { m } from "../paraglide/messages";
-	import { setLocale } from "../paraglide/runtime.js";
 </script>
-
 <div>
 	<footer class="footer sm:footer-horizontal bg-slate-900 text-neutral-content p-12">
 		<nav class="md:place-self-center md:justify-self-start mx-12">

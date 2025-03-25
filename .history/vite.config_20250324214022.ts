@@ -7,8 +7,8 @@ export default defineConfig({
 	plugins: [
 		paraglideVitePlugin({ 
 			project: './project.inlang', 
-			outdir: './src/lib/paraglide',
-			strategy: ["cookie",'baseLocale']
+			outdir: './src/paraglide',
+			strategy: ['cookie', 'baseLocale']
 		}),
 		sveltekit(), 
 		tailwindcss()]

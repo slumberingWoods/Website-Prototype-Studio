@@ -1,12 +1,13 @@
 <script>
 	import { m } from "../paraglide/messages";
 	import { setLocale } from "../paraglide/runtime.js";
+	setLocale("fr");
 </script>
 
 <div>
 	<footer class="footer sm:footer-horizontal bg-slate-900 text-neutral-content p-12">
 		<nav class="md:place-self-center md:justify-self-start mx-12">
-			<h6 class="footer-title">{m.legal()}</h6>
+			<h6 class="footer-title">{m.legal({ locale: "fr" })}</h6>
 			<a href="/" class="link link-hover">Terms of use</a>
 			<a href="/" class="link link-hover">Privacy policy</a>
 			<a href="/" class="link link-hover">Press Kit</a>

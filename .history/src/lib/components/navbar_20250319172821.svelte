@@ -1,6 +1,3 @@
-<script>
-	import { m } from "../paraglide/messages";
-</script>
 <nav>
     <div class="navbar bg-slate-900 shadow-sm content-center">
         <div class="navbar-start flex mx-12">
