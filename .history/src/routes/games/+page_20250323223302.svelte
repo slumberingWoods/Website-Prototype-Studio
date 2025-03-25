@@ -5,7 +5,7 @@
                 <p class="text-3xl">Games</p>
             </div>
         </div>
-        <div class="flex flex-col items-center w-full gap-y-12 my-6">
+        <div class="flex flex-col items-center w-full gap-y-12 my-12">
             <div class="flex flex-row items-center justify-center bg-neutral-900/35 w-full">
                 <img class="h-48 w-96 object-cover my-12 mx-12" src="../src/img/pexels-alscre-3977908.jpg" alt="This is a thing">
                 <div class="text-center content-center grow 3 my-8 text-wrap">
