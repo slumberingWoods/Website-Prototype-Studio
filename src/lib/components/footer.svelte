@@ -1,15 +1,14 @@
 <script>
 	import { m } from "../paraglide/messages";
-	import { setLocale } from "../paraglide/runtime.js";
 </script>
 
 <div>
 	<footer class="footer sm:footer-horizontal bg-slate-900 text-neutral-content p-12">
 		<nav class="md:place-self-center md:justify-self-start mx-12">
 			<h6 class="footer-title">{m.legal()}</h6>
-			<a href="/" class="link link-hover"></a>
-			<a href="/" class="link link-hover">Privacy policy</a>
-			<a href="/" class="link link-hover">Press Kit</a>
+			<a href="/" class="link link-hover">{m["column_legal.term"]()}</a>
+			<a href="/" class="link link-hover">{m["column_legal.private"]()}</a>
+			<a href="/" class="link link-hover">{m["column_legal.press"]()}</a>
 		</nav>
 		<nav class="md:place-self-center md:justify-self-end mx-12">
 			<h6 class="footer-title">Socials</h6>
@@ -29,7 +28,7 @@
 				</a>
 				</li>
 				<li>
-				  <a href="https://www.youtube.com/watch?v=3BFTio5296w&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" aria-label="Youtube">
+					<a href="https://www.youtube.com/watch?v=3BFTio5296w&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" aria-label="Youtube">
 					<svg xmlns="http://www.w3.org/2000/svg" 
 					width="24" 
 					height="24" 
