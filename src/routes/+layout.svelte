@@ -7,9 +7,9 @@
 
 <style lang="postcss">
 	@reference "tailwindcss";
-  	:global(html) {
-    	font-family: 'Times New Roman', Times, serif;
-  	}
+	:global(html) {
+		font-family: 'Times New Roman', Times, serif;
+		}
 </style>
 
 <Nav />
