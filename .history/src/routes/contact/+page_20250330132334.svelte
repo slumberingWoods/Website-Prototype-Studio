@@ -11,18 +11,18 @@
         </div>
         <div class="my-12">
             <div class="text-center">
-                <form action="https://formsubmit.co/tran.thangmanh.dev@gmail.com" method="POST">
+                <form>
                     <p class="text-3xl footer-title">Email Form</p>
                     <fieldset class="w-80">
                         <div class="join"></div>
                         <p class="text-start">Email</p>
                         <input type="email" placeholder="username@site.com" class="input input-bordered"/>
                         <p class="text-start">Message</p>
-                        <input type="message" placeholder="Type your useless questions here" class="input input-bordered"/>
+                        <input type="text" placeholder="Type your useless questions here" class="input input-bordered"/>
                     </fieldset>
                     <br>
                     <button class="btn" type="submit" aria-label="Submit">Submit</button>
-                    <button class="btn bg-red-600" type="reset" aria-label="Reset">Reset</button>
+                    <button class="btn" type="reset" aria-label="Reset">Reset</button>
                 </form>
             </div>
         </div>

@@ -11,7 +11,7 @@
         </div>
         <div class="my-12">
             <div class="text-center">
-                <form action="https://formsubmit.co/tran.thangmanh.dev@gmail.com" method="POST">
+                <form action="https://formsubmit.co/johnmunch123@gmail.com" method="POST">
                     <p class="text-3xl footer-title">Email Form</p>
                     <fieldset class="w-80">
                         <div class="join"></div>
