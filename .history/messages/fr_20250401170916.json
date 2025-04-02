@@ -1,0 +1,18 @@
+{
+    "$schema": "https://inlang.com/schema/inlang-message-format",
+    "example_message": "Hello world {username}",
+    "navbar": {
+        "home": "Home",
+        "games": "Jeux",
+        "about": "About",
+        "blog": "Blog",
+        "contact": "Contact",
+        "button.lang" : "English"
+    },
+    "legal": "Légal",
+    "column_legal": { 
+        "term": "Conditions d'utilisation", 
+        "private": "Politique de confidentialité", 
+        "press": "Dossier de presse"
+    }  
+}

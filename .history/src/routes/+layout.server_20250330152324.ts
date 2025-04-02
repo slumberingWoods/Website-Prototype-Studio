@@ -1,0 +1,1 @@
+import type { ServerLoad } from './$types';
