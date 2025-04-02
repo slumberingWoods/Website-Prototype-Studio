@@ -58,7 +58,7 @@
             "private": "Politique de confidentialité",
             "press": "Dossier de presse"
         },
-        "social": "Réseaux Sociaux",
-        "rights": "Copyright © {date} - Tout les droits sont réservés par ProWebber Ltd"
+        "social": "Socials",
+        "rights": "Copyright © {date} - All right reserved by ProWebber Ltd"
     }
 }

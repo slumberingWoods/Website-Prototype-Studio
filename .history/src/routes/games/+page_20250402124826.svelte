@@ -24,7 +24,7 @@
                             <p>{game.description}</p>
                         </div>
                         <br>
-                        <ul class="menu menu-horizontal mx-8 rounded-box content-center">
+                        <ul class="menu menu-horizontal rounded-box content-center">
                             {#each icons.stores as store}
                                 <li class=""><IconLink link={store.url} image={store.icon} name={store.name} size={icons.store_icon_size}/></li>
                             {/each}

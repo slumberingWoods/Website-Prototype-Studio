@@ -13,7 +13,7 @@
 			<a href="/" class="link link-hover">{m["footer.legal.press"]()}</a>
 		</nav>
 		<nav class="md:place-self-center md:justify-self-end mx-12">
-			<h6 class="footer-title">{m["footer.social"]()}</h6>
+			<h6 class="footer-title">Socials</h6>
 			<ul class="menu menu-horizontal bg-slate-800 rounded-box">
 				<li>
 					<a
@@ -104,7 +104,7 @@
 	>
 		<aside>
 			<p>
-				{m["footer.rights"]({date: new Date().getFullYear()})}
+				{m["footer.rights"]()}
 			</p>
 		</aside>
 	</footer>

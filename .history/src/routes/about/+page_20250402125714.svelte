@@ -60,6 +60,66 @@
                             </div>
                         </div>
                     {/each}
+                    <div
+                        class="bg-neutral-900/35 rounded-md border border-neutral-900 my-4 mx-4"
+                    >
+                        <div
+                            class="flex flex-row items-center justify-start my-4 ml-4"
+                        >
+                            <div
+                                class="relative rounded-full overflow-hidden mx-8 border border-neutral-900"
+                            >
+                                <img
+                                    class="h-30 w-30"
+                                    src="../src/img/pexels-alscre-3977908.jpg"
+                                    alt="This is a thing"
+                                />
+                            </div>
+                            <div class="text-start">
+                                <p class="text-3xl font-semibold">
+                                    Sil K. Song
+                                </p>
+                                <p class="">
+                                    {m["about.page.team.sil.title"]()}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div
+                            class="text-start indent-8 font-stretch-condensed mx-12 my-6 text-lg"
+                        >
+                            <p>{m["about.page.team.sil.bio"]()}</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-neutral-900/35 rounded-md border border-neutral-900 my-4 mx-4"
+                    >
+                        <div
+                            class="flex flex-row items-center justify-start my-4 ml-4"
+                        >
+                            <div
+                                class="relative rounded-full overflow-hidden mx-8 border border-neutral-900"
+                            >
+                                <img
+                                    class="h-30 w-30"
+                                    src="../src/img/pexels-tima-miroshnichenko-7047537.jpg"
+                                    alt="This is a thing"
+                                />
+                            </div>
+                            <div class="text-start">
+                                <p class="text-3xl font-semibold">Gam Er</p>
+                                <p class="">
+                                    {m["about.page.team.gam.title"]()}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div
+                            class="text-start indent-8 font-stretch-condensed mx-12 my-6 text-lg"
+                        >
+                            <p>{m["about.page.team.gam.bio"]()}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
