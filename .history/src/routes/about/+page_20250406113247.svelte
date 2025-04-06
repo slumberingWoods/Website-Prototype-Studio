@@ -1,7 +1,7 @@
 <script lang="ts">
     import { m } from "$lib/paraglide/messages";
     import { people } from "$lib/data/team";
-    import Person from "$lib/components/Person.svelte";
+    import { person } from "$lib/components/person.svelte";
 </script>
 
 <div class="bg-gray-700">
