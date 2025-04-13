@@ -17,7 +17,7 @@
                     </div>
                     <div class="divider lg:divider-horizontal"></div>
                     <div
-                        class="overflow-scroll lg:overflow-hidden h-84 lg:h-auto text-start indent-8 content-center place-items-center justify-items-center my-8 mx-12 text-wrap text-lg"
+                        class="overflow-scroll h-84 lg:h-auto text-start indent-8 content-center place-items-center justify-items-center my-8 mx-12 text-wrap text-lg"
                     >
                         <p>{m["about.page.description"]()}</p>
                     </div>
@@ -27,7 +27,7 @@
                 <p class="text-center text-4xl">
                     {m["about.page.team.title"]()}
                 </p>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-8 lg:mx-36">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mb-4 lg:mx-36">
                     {#each people.list as person}
                         <Person image={person.image} name={person.name} title={person.title} bio={person.bio}></Person>
                     {/each}

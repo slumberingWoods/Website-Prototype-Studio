@@ -4,16 +4,18 @@
 </script>
 
 <div class="bg-gray-700">
-    <div class="mx-4 lg:mx-12 flex flex-col items-center bg-slate-400 h-fit">
-        <article class="text-center text-wrap my-12 w-full">
-            <p class="text-4xl">{m["contact.page.title"]()}</p>
-            <br />
-            <p class="text-lg lg:text-2xl">{m["contact.page.note"]()}</p>
-            <br />
-            <a class="text-3xl lg:text-6xl underline" href="Garbage@ProWebber.ca"
-                >Garbage@ProWebber.ca</a
-            >
-        </article>
+    <div class="mx-12 flex flex-col items-center bg-slate-400 h-fit">
+        <div class="my-12">
+            <div class="text-center text-wrap">
+                <p class="text-4xl">{m["contact.page.title"]()}</p>
+                <br />
+                <p class="text-2xl">{m["contact.page.note"]()}</p>
+                <br />
+                <a class="text-6xl" href="Garbage@ProWebber.ca"
+                    >Garbage@ProWebber.ca</a
+                >
+            </div>
+        </div>
         <div class="my-12">
             <div class="text-center">
                 <form action="/contact" method="POST">

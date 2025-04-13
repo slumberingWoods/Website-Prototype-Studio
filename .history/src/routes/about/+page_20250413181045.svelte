@@ -17,7 +17,7 @@
                     </div>
                     <div class="divider lg:divider-horizontal"></div>
                     <div
-                        class="overflow-scroll lg:overflow-hidden h-84 lg:h-auto text-start indent-8 content-center place-items-center justify-items-center my-8 mx-12 text-wrap text-lg"
+                        class="overflow-scroll h-84 lg:h-auto text-start indent-8 content-center place-items-center justify-items-center my-8 mx-12 text-wrap text-lg"
                     >
                         <p>{m["about.page.description"]()}</p>
                     </div>

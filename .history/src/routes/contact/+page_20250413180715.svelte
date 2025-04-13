@@ -10,7 +10,7 @@
             <br />
             <p class="text-lg lg:text-2xl">{m["contact.page.note"]()}</p>
             <br />
-            <a class="text-3xl lg:text-6xl underline" href="Garbage@ProWebber.ca"
+            <a class="text-3xl lg:text-6xl" href="Garbage@ProWebber.ca"
                 >Garbage@ProWebber.ca</a
             >
         </article>

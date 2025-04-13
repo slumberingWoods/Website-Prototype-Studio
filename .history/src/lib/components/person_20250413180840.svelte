@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="divider"></div>
-    <div class="overflow-scroll lg:overflow-hidden h-64 lg:h-auto text-start indent-8 font-stretch-condensed mx-12 my-6 text-lg">
+    <div class="overflow-scroll h-64 lg:h-auto text-start indent-8 font-stretch-condensed mx-12 my-6 text-lg">
         <p>{bio}</p>
     </div>
 </div>
