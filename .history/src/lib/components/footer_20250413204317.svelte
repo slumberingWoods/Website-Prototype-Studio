@@ -4,7 +4,7 @@
 
 <div>
 	<footer
-		class="footer lg:footer-horizontal bg-slate-900 text-neutral-content p-12"
+		class="footer footer-center lg:footer-horizontal bg-slate-900 text-neutral-content p-12"
 	>
 		<nav class="lg:place-self-center lg:justify-self-start lg:mx-12">
 			<h6 class="footer-title">{m["footer.legal.title"]()}</h6>

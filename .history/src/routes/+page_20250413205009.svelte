@@ -8,12 +8,9 @@
     >
         <div class="hero grow-7">
             <div class="hero-content text-neutral-content text-center">
-                <div class="max-w-md">
-                    <p class="text-4xl lg:text-6xl font-bold">Website Prototype</p>
-                    <br />
-                    <p class="">{m["home.page.motto"]()}</p>
-                </div>
-
+                <p class="text-4xl lg:text-4xl">Website Prototype</p>
+                <br />
+                <p class="">{m["home.page.motto"]()}</p>
             </div>
         </div>
         <div class="text-center content-center grow-2">

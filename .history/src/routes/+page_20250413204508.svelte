@@ -4,16 +4,13 @@
 
 <div class="bg-gray-700">
     <div
-        class="mx-4 sm:mx-12 flex flex-col justify-center items-center bg-slate-400 min-h-screen"
+        class="mx-2 sm:mx-12 flex flex-col justify-center items-center bg-slate-400 min-h-screen"
     >
-        <div class="hero grow-7">
-            <div class="hero-content text-neutral-content text-center">
-                <div class="max-w-md">
-                    <p class="text-4xl lg:text-6xl font-bold">Website Prototype</p>
-                    <br />
-                    <p class="">{m["home.page.motto"]()}</p>
-                </div>
-
+        <div class="content-center grow-7">
+            <div class="text-center">
+                <p class="text-4xl lg:text-4xl">Website Prototype</p>
+                <br />
+                <p class="">{m["home.page.motto"]()}</p>
             </div>
         </div>
         <div class="text-center content-center grow-2">

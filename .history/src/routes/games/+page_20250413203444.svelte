@@ -20,7 +20,7 @@
                     <div class="content-center text-wrap">                       
                         <p class="text-center text-2xl">{game.name}</p>
                         <br>
-                        <div class="overflow-scroll h-64 lg:h-auto lg:overflow-hidden indent-8 mx-2 lg:mx-8">
+                        <div class="overflow-scroll h-64 lg:h-auto lg:overflow-hidden indent-8 lg:mx-8">
                             <p>{game.description}</p>
                         </div>
                         <br>
