@@ -21,6 +21,5 @@ export default {
 		csrf: {
 			checkOrigin: false,
 		}
-	},
-	preprocess: [vitePreprocess({})],
+	}
 };

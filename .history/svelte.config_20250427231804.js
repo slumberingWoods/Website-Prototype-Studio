@@ -17,10 +17,9 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 export default {
 	kit: {
-		adapter: adapter({ out: 'build' }),
+		adapter: adapter(),
 		csrf: {
 			checkOrigin: false,
-		}
-	},
-	preprocess: [vitePreprocess({})],
+		  }
+	}
 };

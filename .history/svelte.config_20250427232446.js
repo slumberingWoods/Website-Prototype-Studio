@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-node';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
+
 // /** @type {import('@sveltejs/kit').Config} */
 // const config = {
 // 	// Consult https://svelte.dev/docs/kit/integrations
@@ -17,10 +18,6 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 export default {
 	kit: {
-		adapter: adapter({ out: 'build' }),
-		csrf: {
-			checkOrigin: false,
-		}
-	},
-	preprocess: [vitePreprocess({})],
+		adapter: adapter(),
+	}
 };
