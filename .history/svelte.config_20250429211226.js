@@ -17,7 +17,12 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 export default {
 	kit: {
-		adapter: adapter()
+		adapter: adapter({ out: 'build' }),
+		alias: {
+			$styles: 'src/styles',
+			$assets: 'src/assets',
+			$content: 'src/content'
+		}
 	},
 	preprocess: [vitePreprocess({})],
 };
