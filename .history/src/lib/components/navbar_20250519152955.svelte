@@ -6,15 +6,13 @@
 </script>
 
 <nav>
-    <div class="navbar h-20 lg:h-fit bg-slate-900 shadow-sm content-center">
+    <div
+        class="navbar h-20 lg:h-fit bg-slate-900 shadow-sm content-center"
+    >
         <div class="navbar-start flex lg:mx-12">
-            <ul class="menu menu-horizontal px-5 content-center">
-                <li>
-                    <a href={localizeHref("/")} class="text-xl"
-                        >Prototype Website</a
-                    >
-                </li>
-            </ul>
+            <a href={localizeHref("/")} class="btn btn-ghost text-xl"
+                >Prototype Website</a
+            >
         </div>
         <div class="navbar-end flex lg:mx-12 content-center">
             <div class="invisible lg:visible">
