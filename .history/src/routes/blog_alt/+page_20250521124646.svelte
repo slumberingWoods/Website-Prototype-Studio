@@ -35,6 +35,8 @@
         }
         url = camelCase(url);
         url = url.replace(/\s/g, "");
+
+        console.log(url);
         articleValue.metadata.url = url;
         articleValue.metadata.date = formattedDate;
         date_sorted.push(articleValue);
@@ -68,9 +70,9 @@
                                 author={article.metadata.author}
                                 date={article.metadata.date}
                                 img={article.metadata.img}
-                                url={localizeHref(
-                                    "/blog_alt" + "/" + article.metadata.url,
-                                )}
+                                url={localizeHref("/blog") +
+                                    "/" +
+                                    article.metadata.url}
                             ></ArticlePreview>
                         {/if}
                     {/each}

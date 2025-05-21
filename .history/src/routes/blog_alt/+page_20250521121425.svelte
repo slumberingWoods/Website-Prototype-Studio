@@ -25,17 +25,6 @@
             month: "long",
             day: "numeric",
         });
-        var url = articleValue.metadata.title;
-        function camelCase(value: string) {
-            return value
-                .toLowerCase()
-                .replace(/\s+(.)/g, function (match, group) {
-                    return group.toUpperCase();
-                });
-        }
-        url = camelCase(url);
-        url = url.replace(/\s/g, "");
-        articleValue.metadata.url = url;
         articleValue.metadata.date = formattedDate;
         date_sorted.push(articleValue);
     }
@@ -56,10 +45,8 @@
                 <p class="text-3xl lg:text-4xl">Blogs</p>
             </div>
             <div class="">
-                <div
-                    class="grid grid-cols-2 lg:grid-cols-6 gap-3 mt-8 lg:mx-36"
-                >
-                    {#each date_sorted.slice() as article}
+                <div class="grid grid-cols-2 lg:grid-cols-6 gap-3 mt-8 lg:mx-36">
+                    {#each date_sorted.slice(0, 3) as article}
                         {#if article.metadata.visible}
                             <ArticlePreview
                                 title={article.metadata.title}
@@ -68,9 +55,9 @@
                                 author={article.metadata.author}
                                 date={article.metadata.date}
                                 img={article.metadata.img}
-                                url={localizeHref(
-                                    "/blog_alt" + "/" + article.metadata.url,
-                                )}
+                                url={localizeHref("/blog") +
+                                    "/" +
+                                    article.metadata.title}
                             ></ArticlePreview>
                         {/if}
                     {/each}

@@ -2,6 +2,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import { paraglideVitePlugin } from '@inlang/paraglide-js';
+import { enhancedImages } from '@sveltejs/enhanced-img';
 
 export default defineConfig({
 	plugins: [
@@ -39,20 +40,6 @@ export default defineConfig({
 					]
 				},
 				{
-					pattern: "/blog_alt",
-					localized: [
-						["en", "/blog_alt"],
-						["fr", "/blog_alt/fr"]
-					]
-				},
-				{
-					pattern: "/blog_alt/:slug",
-					localized: [
-						["en", "/blog_alt/:slug"],
-						["fr", "/blog_alt/fr/:slug"]
-					]
-				},
-				{
 					pattern: "/contact",
 					localized: [
 						["en", "/contact"],
@@ -61,6 +48,7 @@ export default defineConfig({
 				},
 			]
 		}),
+		enhancedImages(),
 		sveltekit(), 
 		tailwindcss()]
 });

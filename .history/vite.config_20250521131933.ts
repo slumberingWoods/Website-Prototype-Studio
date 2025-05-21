@@ -46,10 +46,10 @@ export default defineConfig({
 					]
 				},
 				{
-					pattern: "/blog_alt/:slug",
+					pattern: "/blog_alt/[slug]",
 					localized: [
-						["en", "/blog_alt/:slug"],
-						["fr", "/blog_alt/fr/:slug"]
+						["en", "/blog_alt/[slug]"],
+						["fr", "/blog_alt/[slug]/fr"]
 					]
 				},
 				{

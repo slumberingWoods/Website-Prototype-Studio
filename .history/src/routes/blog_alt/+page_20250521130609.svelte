@@ -68,9 +68,9 @@
                                 author={article.metadata.author}
                                 date={article.metadata.date}
                                 img={article.metadata.img}
-                                url={localizeHref(
-                                    "/blog_alt" + "/" + article.metadata.url,
-                                )}
+                                url={localizeHref("/blog_alt") +
+                                    "/" +
+                                    article.metadata.url}
                             ></ArticlePreview>
                         {/if}
                     {/each}

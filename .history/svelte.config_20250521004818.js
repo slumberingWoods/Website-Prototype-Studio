@@ -20,7 +20,6 @@ export default {
 	kit: {
 		adapter: adapter()
 	},
-	extensions: ['.svelte', '.md', '.svx'],
 	preprocess: [vitePreprocess({}), mdsvex({
 		extensions: ['.md', '.svx']
 	})],
