@@ -6,7 +6,7 @@
     <div class="flex flex-col items-center mx-2 my-2 w-fit">
         <img class="w-48 h-64" src={img} alt={title} />
         <div class="text-left">
-            <div class="flex-row">
+            <div class="flex-row text-sm">
                 <p>Posted on: {date}</p>
                 <div class="divider divider-horizontal"></div>
                 <p>Posted by: {author}</p>

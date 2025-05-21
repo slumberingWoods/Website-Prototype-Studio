@@ -2,7 +2,7 @@
     let { title, description, category, author, img, date, url } = $props();
 </script>
 
-<div class="bg-neutral-900/35 rounded-md border border-neutral-900 my-4 mx-4">
+<div class="bg-neutral-900/35 rounded-md border border-neutral-900 my-4 mx-4 w-200">
     <div class="flex flex-col items-center mx-2 my-2 w-fit">
         <img class="w-48 h-64" src={img} alt={title} />
         <div class="text-left">
