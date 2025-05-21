@@ -35,7 +35,7 @@
         }
         url = camelCase(url);
         url = url.replace(/\s/g, "");
-        console.log(value);
+        console.log(value)
         articleValue.metadata.url = url;
         articleValue.metadata.date = formattedDate;
         date_sorted.push(articleValue);
