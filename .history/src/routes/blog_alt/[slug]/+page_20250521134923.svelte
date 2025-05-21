@@ -9,7 +9,6 @@
         <div class="text-left my-8">
             <h1 class="text-center text-5xl">{data.title}</h1>
             <p class="text-center">Published: {data.date}</p>
-            <div class="divider"></div>
             <svelte:component this={data.content} />
         </div>
     </div>

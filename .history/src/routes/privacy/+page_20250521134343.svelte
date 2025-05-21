@@ -9,7 +9,7 @@
         </div>
         <div class="text-center content-center grow-2">
             <form>
-                <p class="footer-title">Newsletter</p>
+                <p class="footer-title">Newsletter</h6>
                 <fieldset class="w-80">
                     <div class="join">
                     <input
