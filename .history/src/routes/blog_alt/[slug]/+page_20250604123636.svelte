@@ -1,12 +1,5 @@
 <script>
     export let data;
-    const date = new Date(data.date);
-    const formattedDate = date.toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-    });
-    data.date = formattedDate;
 </script>
 
 <article>
@@ -16,9 +9,7 @@
                 <h1 class="text-center text-5xl">{data.title}</h1>
                 <p class="text-center">Published: {data.date}</p>
                 <div class="divider"></div>
-                <div class="prose">
-                    <svelte:component this={data.content} />
-                </div>
+                <data.content />
             </div>
         </article>
     </div>

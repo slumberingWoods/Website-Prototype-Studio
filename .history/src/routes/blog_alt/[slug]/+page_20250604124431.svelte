@@ -1,12 +1,5 @@
 <script>
     export let data;
-    const date = new Date(data.date);
-    const formattedDate = date.toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-    });
-    data.date = formattedDate;
 </script>
 
 <article>
