@@ -1,6 +1,6 @@
 import { m } from "$lib/paraglide/messages";
 
-export const sections = {
+export const descriptions = {
     list: [
         {
             title: m["about.page.section"](),

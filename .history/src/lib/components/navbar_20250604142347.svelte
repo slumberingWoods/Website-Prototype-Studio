@@ -28,22 +28,18 @@
                                 >
                             </li>
                         {:else}
-                            <li>
-                                <details>
-                                    <summary>{link.name}</summary>
-                                    <ul class="p-2 bg-slate-900">
-                                        {#each link.links as sublink}
-                                            <li>
-                                                <a
-                                                    href={localizeHref(
-                                                        sublink.href,
-                                                    )}>{sublink.name}</a
-                                                >
-                                            </li>
-                                        {/each}
-                                    </ul>
-                                </details>
-                            </li>
+                            <details>
+                                <summary>{link.name}</summary>
+                                <ul class="p-2 bg-slate-900">
+                                    {#each link.links as sublink}
+                                        <li>
+                                            <a href={localizeHref(sublink.href)}
+                                                >{sublink.name}</a
+                                            >
+                                        </li>
+                                    {/each}
+                                </ul>
+                            </details>
                         {/if}
                     {/each}
                 </ul>

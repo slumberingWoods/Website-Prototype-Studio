@@ -10,8 +10,8 @@
         <div class="my-12">
             <div class="text-center">
                 <p class="text-3xl lg:text-4xl">{m["about.page.title"]()}</p>
-                {#each sections.list as section}
-                    <BlockDescription title={section.title} description={section.description}> </BlockDescription>
+                {#each descriptions.list as descriptions}
+                    <BlockDescription title={}> </BlockDescription>
                 {/each}
             </div>
             <div class="">

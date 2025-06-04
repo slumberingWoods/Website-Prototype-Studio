@@ -24,28 +24,47 @@
                     {#each navbar.list as link}
                         {#if link.links == null}
                             <li>
-                                <a href={localizeHref(link.href)}>{link.name}</a
+                                <a href={localizeHref(link.href)}
+                                    >{link.name}</a
                                 >
                             </li>
-                        {:else}
-                            <li>
-                                <details>
-                                    <summary>{link.name}</summary>
-                                    <ul class="p-2 bg-slate-900">
-                                        {#each link.links as sublink}
-                                            <li>
-                                                <a
-                                                    href={localizeHref(
-                                                        sublink.href,
-                                                    )}>{sublink.name}</a
-                                                >
-                                            </li>
-                                        {/each}
-                                    </ul>
-                                </details>
-                            </li>
-                        {/if}
+                        {:else}{/if}
                     {/each}
+                    <li>
+                        <a href={localizeHref("/")}>{m["navbar.home"]()}</a>
+                    </li>
+                    <li>
+                        <a href={localizeHref("/games")}
+                            >{m["navbar.games"]()}</a
+                        >
+                    </li>
+                    <li>
+                        <a href={localizeHref("/about")}
+                            >{m["navbar.about"]()}</a
+                        >
+                    </li>
+                    <li>
+                        <details>
+                            <summary>{m["navbar.blog"]()}</summary>
+                            <ul class="p-2 bg-slate-900">
+                                <li>
+                                    <a href={localizeHref("/blog")}
+                                        >{m["navbar.blog"]()}</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href={localizeHref("/blog_alt")}
+                                        >{m["navbar.blogalt"]()}</a
+                                    >
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <a href={localizeHref("/contact")}
+                            >{m["navbar.contact"]()}</a
+                        >
+                    </li>
                 </ul>
             </div>
             <Socials></Socials>

@@ -3,7 +3,7 @@
     import { m } from "../paraglide/messages";
     import { localizeHref } from "$lib/paraglide/runtime";
     import { page } from "$app/state";
-    import { navbar } from "$lib/data/navigation";
+    import { } from "$lib/data/navigation";
     import Socials from "./Socials.svelte";
 </script>
 
@@ -21,31 +21,42 @@
         <div class="navbar-end flex lg:mx-12 content-center">
             <div class="invisible lg:visible">
                 <ul class="menu menu-horizontal px-5 content-center">
-                    {#each navbar.list as link}
-                        {#if link.links == null}
-                            <li>
-                                <a href={localizeHref(link.href)}>{link.name}</a
-                                >
-                            </li>
-                        {:else}
-                            <li>
-                                <details>
-                                    <summary>{link.name}</summary>
-                                    <ul class="p-2 bg-slate-900">
-                                        {#each link.links as sublink}
-                                            <li>
-                                                <a
-                                                    href={localizeHref(
-                                                        sublink.href,
-                                                    )}>{sublink.name}</a
-                                                >
-                                            </li>
-                                        {/each}
-                                    </ul>
-                                </details>
-                            </li>
-                        {/if}
-                    {/each}
+                    {#each }
+                    <li>
+                        <a href={localizeHref("/")}>{m["navbar.home"]()}</a>
+                    </li>
+                    <li>
+                        <a href={localizeHref("/games")}
+                            >{m["navbar.games"]()}</a
+                        >
+                    </li>
+                    <li>
+                        <a href={localizeHref("/about")}
+                            >{m["navbar.about"]()}</a
+                        >
+                    </li>
+                    <li>
+                        <details>
+                            <summary>{m["navbar.blog"]()}</summary>
+                            <ul class="p-2 bg-slate-900">
+                                <li>
+                                    <a href={localizeHref("/blog")}
+                                        >{m["navbar.blog"]()}</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href={localizeHref("/blog_alt")}
+                                        >{m["navbar.blogalt"]()}</a
+                                    >
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <a href={localizeHref("/contact")}
+                            >{m["navbar.contact"]()}</a
+                        >
+                    </li>
                 </ul>
             </div>
             <Socials></Socials>

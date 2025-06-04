@@ -12,7 +12,7 @@
 			<a href="/" class="link link-hover">{m["footer.legal.term"]()}</a>
 			<a href="/" class="link link-hover">{m["footer.legal.private"]()}</a>
 		</nav>
-		<nav class="invisible lg:visible lg:place-self-center lg:justify-self-end lg:mx-12">
+		<nav class="lg:place-self-center lg:justify-self-end lg:mx-12">
 			<h6 class="footer-title">{m["footer.social"]()}</h6>
 			<Socials></Socials>
 		</nav>
