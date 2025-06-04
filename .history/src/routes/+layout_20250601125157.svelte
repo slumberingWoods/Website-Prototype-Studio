@@ -41,10 +41,8 @@
                 <a href={localizeHref("/about")}>{m["navbar.about"]()}</a>
             </li>
             <li>
-                <summary>{m["navbar.blog"]()}</summary>
                 <ul>
-                    <li><a href={localizeHref("/blog")}>{m["navbar.blog"]()}</a></li>
-                    <li><a href={localizeHref("/blog_alt")}>{m["navbar.blogalt"]()}</a></li>
+                    <a href={localizeHref("/blog")}>{m["navbar.blog"]()}</a>
                 </ul>
             </li>
             <li>

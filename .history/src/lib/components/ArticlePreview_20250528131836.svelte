@@ -5,7 +5,7 @@
 <div class="bg-neutral-900/35 rounded-md border border-neutral-900 my-4 mx-4">
     <div class="flex flex-col items-center justify-start mx-4 my-2 max-w-38">
         <img class="max-w-48 max-h-36 my-2" src={img} alt={title} />
-        <div class="text-left mb-2">
+        <div class="text-left">
             <div class="flex-row">
                 <p class="text-sm">Posted on: {date}</p>
                 <div class="divider divider-horizontal"></div>

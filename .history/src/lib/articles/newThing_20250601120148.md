@@ -1,7 +1,7 @@
 ---
 
-title: Test three
-description: Test three description
+title: New Thing
+description: This is a description
 visible: true
 category: Blog
 author: Test
