@@ -5,7 +5,7 @@
 <div class="text-center content-center">
     <form>
         <p class="text-2xl">{title}</p>
-        <div class="join mt-2">
+        <div class="join">
             <div>
                 <label class="input validator join-item">
                     <svg

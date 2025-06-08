@@ -9,11 +9,9 @@
     <div
         class="mx-4 sm:mx-12 flex flex-col justify-center items-center bg-slate-400 min-h-screen"
     >
-        <div class="hero grow-7">
-            <Hero title={hero.title} motto={hero.motto}></Hero>
-        </div>
+        <div class="grow-7"><Hero title={hero.title} motto={hero.motto}></Hero></div>
 
-        <div class="grow-2 mx-4">
+        <div class="grow 2">
             <NewsletterSub
                 title={newsletter.title}
                 subscribe={newsletter.subscribe}

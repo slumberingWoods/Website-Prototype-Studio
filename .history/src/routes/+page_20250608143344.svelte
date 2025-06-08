@@ -13,7 +13,7 @@
             <Hero title={hero.title} motto={hero.motto}></Hero>
         </div>
 
-        <div class="grow-2 mx-4">
+        <div class="grow-2">
             <NewsletterSub
                 title={newsletter.title}
                 subscribe={newsletter.subscribe}

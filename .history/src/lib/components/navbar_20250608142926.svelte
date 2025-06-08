@@ -8,9 +8,7 @@
 </script>
 
 <nav>
-    <div
-        class="navbar h-20 lg:h-fit bg-slate-900 shadow-sm content-center w-max-screen"
-    >
+    <div class="navbar h-20 lg:h-fit bg-slate-900 shadow-sm content-center w-max-screen">
         <div class="navbar-start flex lg:mx-12">
             <ul class="menu menu-horizontal lg:px-5 content-center">
                 <li>
@@ -50,8 +48,7 @@
                     {/each}
                 </ul>
             </div>
-            <div class="hidden lg:block"><Socials></Socials></div>
-
+            <Socials></Socials>
             <ul>
                 <div class="lg:ml-4">
                     <form method="POST" action={localizeHref("/")}>
