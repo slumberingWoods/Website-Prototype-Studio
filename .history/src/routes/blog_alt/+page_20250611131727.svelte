@@ -1,6 +1,5 @@
 <script lang="ts">
     import ArticlePreview from "$lib/components/ArticlePreview.svelte";
-    import FeaturedArticlePreview from "$lib/components/FeaturedArticlePreview.svelte";
     import { localizeHref } from "$lib/paraglide/runtime";
     const articles = import.meta.glob(`$lib/articles/*.{md,svx,svelte,md}`, {
         eager: true,
@@ -47,7 +46,7 @@
             new Date(a.metadata.date).getTime()
         );
     });
-    let featured = date_sorted[0];
+    let featured = date_sorted[1];
 </script>
 
 <div class="bg-gray-700">
@@ -59,15 +58,42 @@
                 <p class="text-3xl lg:text-4xl">Featured Blog</p>
             </div>
             <div class="pt-8">
-                <FeaturedArticlePreview
-                    title={featured.metadata.title}
-                    description={featured.metadata.description}
-                    category={featured.metadata.category}
-                    author={featured.metadata.author}
-                    date={featured.metadata.date}
-                    img={featured.metadata.img}
-                    url={localizeHref("/blog_alt/" + featured.metadata.url)}
-                ></FeaturedArticlePreview>
+                <div
+                    class="hero bg-neutral-900/35 rounded-md border border-neutral-900 my-4 mx-4 w-fit"
+                >
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img
+                            src={featured.metadata.img}
+                            class="max-w-sm rounded-lg shadow-2xl"
+                            alt={featured.metadata.title}
+                        />
+                        <div>
+                            <h1 class="text-5xl font-bold">
+                                {featured.metadata.title}
+                            </h1>
+                            <div class="pt-2">
+                                <p class="">Published:
+                                    {featured.metadata.date}
+                                </p>
+                                <p class="">By: 
+                                    {featured.metadata.author}
+                                </p>
+                            </div>
+
+                            <p class="py-6">
+                                {featured.metadata.description}
+                            </p>
+                            <a
+                                class="btn btn-primary"
+                                href={localizeHref(
+                                    "/blog_alt/" + featured.metadata.url,
+                                )}
+                                aria-label={featured.metadata.title}
+                                >Read More</a
+                            >
+                        </div>
+                    </div>
+                </div>
                 <div class="pt-5 text-center">
                     <p class="text-3xl lg:text-4xl">Blogs</p>
                 </div>

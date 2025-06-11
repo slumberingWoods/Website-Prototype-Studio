@@ -12,9 +12,7 @@ export const load: PageLoad = async ({ params }) => {
 			date
 		};
 	} catch {
-		error(404, {
-			message: "Article not found"
-		});
+
 	}
 
 };

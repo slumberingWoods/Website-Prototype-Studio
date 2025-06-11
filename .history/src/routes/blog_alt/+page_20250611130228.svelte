@@ -1,6 +1,5 @@
 <script lang="ts">
     import ArticlePreview from "$lib/components/ArticlePreview.svelte";
-    import FeaturedArticlePreview from "$lib/components/FeaturedArticlePreview.svelte";
     import { localizeHref } from "$lib/paraglide/runtime";
     const articles = import.meta.glob(`$lib/articles/*.{md,svx,svelte,md}`, {
         eager: true,
@@ -47,7 +46,7 @@
             new Date(a.metadata.date).getTime()
         );
     });
-    let featured = date_sorted[0];
+    const featured = date_sorted.slice(0,1) as unknown as Article;
 </script>
 
 <div class="bg-gray-700">
@@ -56,20 +55,26 @@
     >
         <div class="my-12">
             <div class="text-center">
-                <p class="text-3xl lg:text-4xl">Featured Blog</p>
+                <p class="text-3xl lg:text-4xl">Blogs</p>
             </div>
-            <div class="pt-8">
-                <FeaturedArticlePreview
-                    title={featured.metadata.title}
-                    description={featured.metadata.description}
-                    category={featured.metadata.category}
-                    author={featured.metadata.author}
-                    date={featured.metadata.date}
-                    img={featured.metadata.img}
-                    url={localizeHref("/blog_alt/" + featured.metadata.url)}
-                ></FeaturedArticlePreview>
-                <div class="pt-5 text-center">
-                    <p class="text-3xl lg:text-4xl">Blogs</p>
+            <div class="">
+                <div class="hero bg-base-200">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img
+                            src={featured.metadata.img}
+                            class="max-w-sm rounded-lg shadow-2xl"
+                        />
+                        <div>
+                            <h1 class="text-5xl font-bold">Box Office News!</h1>
+                            <p class="py-6">
+                                Provident cupiditate voluptatem et in. Quaerat
+                                fugiat ut assumenda excepturi exercitationem
+                                quasi. In deleniti eaque aut repudiandae et a id
+                                nisi.
+                            </p>
+                            <button class="btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
                 </div>
                 <div
                     class="grid grid-cols-2 lg:grid-cols-4 lg:gap-6 mt-8 lg:mx-36"

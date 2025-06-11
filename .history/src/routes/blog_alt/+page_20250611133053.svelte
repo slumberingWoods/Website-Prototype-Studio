@@ -47,7 +47,7 @@
             new Date(a.metadata.date).getTime()
         );
     });
-    let featured = date_sorted[0];
+    let featured = $props();
 </script>
 
 <div class="bg-gray-700">
@@ -59,7 +59,7 @@
                 <p class="text-3xl lg:text-4xl">Featured Blog</p>
             </div>
             <div class="pt-8">
-                <FeaturedArticlePreview
+                <FeaturedArticlePreview>
                     title={featured.metadata.title}
                     description={featured.metadata.description}
                     category={featured.metadata.category}
@@ -67,7 +67,7 @@
                     date={featured.metadata.date}
                     img={featured.metadata.img}
                     url={localizeHref("/blog_alt/" + featured.metadata.url)}
-                ></FeaturedArticlePreview>
+                </FeaturedArticlePreview>
                 <div class="pt-5 text-center">
                     <p class="text-3xl lg:text-4xl">Blogs</p>
                 </div>

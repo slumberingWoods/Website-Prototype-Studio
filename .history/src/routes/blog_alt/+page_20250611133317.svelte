@@ -47,7 +47,7 @@
             new Date(a.metadata.date).getTime()
         );
     });
-    let featured = date_sorted[0];
+    let featured = date_sorted[1];
 </script>
 
 <div class="bg-gray-700">

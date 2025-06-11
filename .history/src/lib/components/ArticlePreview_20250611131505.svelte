@@ -14,7 +14,7 @@
             <p class="text-2xl">{title}</p>
             <p>{category}</p>
             <div class="divider"></div>
-            <p class="pb-2">{description}</p>
+            <p>{description}</p>
             <a href={url} aria-label={title} class="py-5 btn btn-sm btn-primary">Read More...</a>
         </div>
     </div>
