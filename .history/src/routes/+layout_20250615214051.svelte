@@ -6,12 +6,6 @@
     import { localizeHref } from "$lib/paraglide/runtime";
     import { m } from "$lib/paraglide/messages";
     import MobileDrawerContent from "$lib/components/MobileDrawerContent.svelte";
-
-    let checked = $state(false);
-        
-    function handleClick() {
-        checked = !checked;
-    }
 </script>
 
 <svelte:head>
@@ -22,13 +16,13 @@
     ></script>
 </svelte:head>
 <div class="drawer drawer-end text-neutral-50">
-    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" bind:checked={checked}/>
-    <div class="drawer-content w-full scroll-smooth">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content">
         <Nav />
 
         {@render children()}
 
         <Footer />
     </div>
-    <MobileDrawerContent bind:updateDrawer={handleClick}></MobileDrawerContent>
+    <MobileDrawerContent></MobileDrawerContent>
 </div>

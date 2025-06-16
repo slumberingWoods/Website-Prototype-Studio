@@ -8,7 +8,6 @@
     import MobileDrawerContent from "$lib/components/MobileDrawerContent.svelte";
 
     let checked = $state(false);
-        
     function handleClick() {
         checked = !checked;
     }
@@ -21,9 +20,9 @@
         data-website-id="b356c86c-09c1-4dcd-9f32-febd48023d6e"
     ></script>
 </svelte:head>
-<div class="drawer drawer-end text-neutral-50">
-    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" bind:checked={checked}/>
-    <div class="drawer-content w-full scroll-smooth">
+<div class="drawer drawer-end w-full scroll-smooth text-neutral-50">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content w-full">
         <Nav />
 
         {@render children()}

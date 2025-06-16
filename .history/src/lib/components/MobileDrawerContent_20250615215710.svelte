@@ -15,7 +15,7 @@
         {#each navbar.list as link}
             {#if link.links == null}
                 <li>
-                    <a href={localizeHref(link.href)} onclick={updateDrawer}>{link.name}</a>
+                    <a href={localizeHref(link.href)}>{link.name}</a>
                 </li>
             {:else}
                 <li>
@@ -24,7 +24,7 @@
                         <ul class="p-2 bg-slate-900">
                             {#each link.links as sublink}
                                 <li>
-                                    <a href={localizeHref(sublink.href)} onclick={updateDrawer}
+                                    <a href={localizeHref(sublink.href)}
                                         >{sublink.name}</a
                                     >
                                 </li>

@@ -15,7 +15,7 @@
         {#each navbar.list as link}
             {#if link.links == null}
                 <li>
-                    <a href={localizeHref(link.href)} onclick={updateDrawer}>{link.name}</a>
+                    <a href={localizeHref(link.href)}>{link.name}</a>
                 </li>
             {:else}
                 <li>

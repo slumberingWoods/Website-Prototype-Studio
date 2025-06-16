@@ -9,7 +9,7 @@
 
     let checked = $state(false);
         
-    function handleClick() {
+    export function handleClick() {
         checked = !checked;
     }
 </script>
@@ -22,7 +22,7 @@
     ></script>
 </svelte:head>
 <div class="drawer drawer-end text-neutral-50">
-    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" bind:checked={checked}/>
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content w-full scroll-smooth">
         <Nav />
 
