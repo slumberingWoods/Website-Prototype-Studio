@@ -14,19 +14,21 @@
     <ul class="menu text-2xl bg-slate-900/95 min-h-full w-80 pl-10 pt-[74px]">
         <!-- Sidebar content here -->
         <li>
-            <div class="lg:ml-4">
-                <form method="POST" action={localizeHref("/")}>
-                    <input
-                        type="hidden"
-                        name="url"
-                        id="MyId"
-                        value={page.url.pathname}
-                    />
-                    <button class="btn btn-neutral bg-slate-800 rounded-box"
-                        >{m["navbar.button.lang"]()}</button
-                    >
-                </form>
-            </div>
+            <ul>
+                <div class="lg:ml-4">
+                    <form method="POST" action={localizeHref("/")}>
+                        <input
+                            type="hidden"
+                            name="url"
+                            id="MyId"
+                            value={page.url.pathname}
+                        />
+                        <button class="btn btn-neutral bg-slate-800 rounded-box"
+                            >{m["navbar.button.lang"]()}</button
+                        >
+                    </form>
+                </div>
+            </ul>
         </li>
         {#each navbar.list as link}
             {#if link.links == null}
