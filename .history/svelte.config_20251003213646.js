@@ -18,8 +18,19 @@ import { mdsvex } from 'mdsvex';
 
 export default {
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		csp: {
+			directives: {
+				'script-src': ['self', 'http://gwf-umami.67.207.84.31.sslip.io/dashboard']
+			},
+			// must be specified with either the `report-uri` or `report-to` directives, or both
+			reportOnly: {
+				'script-src': ['self', 'http://gwf-umami.67.207.84.31.sslip.io/dashboard'],
+				'report-uri': ['/']
+			}
+		}
 	},
+	extensions: ['.svelte', '.md', '.svx'],
 	preprocess: [vitePreprocess({}), mdsvex({
 		extensions: ['.md', '.svx']
 	})],
