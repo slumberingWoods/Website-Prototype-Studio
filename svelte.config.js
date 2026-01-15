@@ -21,11 +21,11 @@ export default {
 		adapter: adapter(),
 		csp: {
 			directives: {
-				'script-src': ['self', 'https://umami.limboworks.ca']
+				'script-src': ['self', 'https://umami.limboworks.ca/script.js']
 			},
 			// must be specified with either the `report-uri` or `report-to` directives, or both
 			reportOnly: {
-				'script-src': ['self', 'https://umami.limboworks.ca'],
+				'script-src': ['self', 'https://umami.limboworks.ca/script.js'],
 				'report-uri': ['/']
 			}
 		}
