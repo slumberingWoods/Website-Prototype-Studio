@@ -3,7 +3,7 @@
 </script>
 
 <div
-    class="hero bg-neutral-900/35 rounded-md border border-neutral-900 my-4 mx-4"
+    class="hero bg-neutral-900/35 rounded-md border border-neutral-900"
 >
     <div class="hero-content flex-col lg:flex-row">
         <img src={img} class="max-w-sm rounded-lg shadow-2xl" alt={title} />

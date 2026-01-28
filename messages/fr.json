@@ -53,12 +53,13 @@
         }
     },
     "footer": {
+        "link": "Liens",
         "legal": {
             "title": "Légal",
             "term": "Conditions d'utilisation",
             "private": "Politique de confidentialité"
         },
         "social": "Réseaux Sociaux",
-        "rights": "Copyright © {date} - Tout les droits sont réservés par ProWebber Ltd"
+        "rights": "Copyright © {date} - Tout les droits sont réservés par Limboworks Ltd"
     }
 }

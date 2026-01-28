@@ -11,7 +11,7 @@
     <div
         class="navbar h-20 lg:h-fit bg-slate-900 shadow-sm content-center w-max-screen"
     >
-        <div class="navbar-start flex lg:mx-12">
+        <div class="navbar-start flex lg:ml-6">
             <ul class="menu menu-horizontal lg:px-5 content-center">
                 <li>
                     <a href={localizeHref("/")} class="text-lg lg:text-xl"
@@ -20,9 +20,9 @@
                 </li>
             </ul>
         </div>
-        <div class="navbar-end flex lg:mx-12 content-center">
+        <div class="navbar-end flex lg:mr-2 content-center">
             <div class="invisible lg:visible">
-                <ul class="menu menu-horizontal px-5 content-center">
+                <ul class="menu menu-horizontal px-2 content-center">
                     {#each navbar.list as link}
                         {#if link.links == null}
                             <li>
@@ -51,9 +51,8 @@
                 </ul>
             </div>
             <div class="hidden lg:block"><Socials></Socials></div>
-
             <ul>
-                <div class="lg:ml-4">
+                <div class="lg:ml-2">
                     <form method="POST" action={localizeHref("/")}>
                         <input
                             type="hidden"

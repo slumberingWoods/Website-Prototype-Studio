@@ -2,7 +2,7 @@
   let { link, image, name, size } = $props();
 </script>
 
-<a href={`${link}`} class={`w-full bg-no-repeat bg-[url(${image})]
+<a href={`${link}`} class={`w-fit bg-no-repeat bg-[url(${image})]
 backdrop-blur-lg backdrop:saturate-500`}>
   <img src={image} alt={`image_${name}`} width={size} height={size}>
 </a>

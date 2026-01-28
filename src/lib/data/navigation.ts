@@ -40,7 +40,7 @@ export const navbar = {
 }
 
 export const socials = {
-    icon_size: 25,
+    icon_size: 20,
     list: [
         {
             link: "http://youtube.com",

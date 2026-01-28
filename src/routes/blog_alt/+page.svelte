@@ -52,13 +52,13 @@
 
 <div class="bg-gray-700">
     <div
-        class="mx-4 lg:mx-12 flex flex-col justify-center items-center bg-slate-400 h-fit"
+        class="mx-4 lg:mx-12 flex flex-col bg-slate-400 h-fit"
     >
         <div class="my-12">
             <div class="text-center">
                 <p class="text-3xl lg:text-4xl">Featured Blog</p>
             </div>
-            <div class="pt-8">
+            <div class="pt-8 grow-0 mx-2">
                 <FeaturedArticlePreview
                     title={featured.metadata.title}
                     description={featured.metadata.description}
