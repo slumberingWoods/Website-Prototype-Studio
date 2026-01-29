@@ -71,7 +71,7 @@
                 <p class="text-3xl lg:text-4xl">Blogs</p>
             </div>
             <div
-                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 my-10 px-4 sm:px-8 lg:px-36"
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 lg:gap-4 my-10 px-4 sm:px-8 lg:px-12"
             >
                 {#each date_sorted.slice(1) as article}
                     {#if article.metadata.visible}

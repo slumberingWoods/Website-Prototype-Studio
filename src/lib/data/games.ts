@@ -26,12 +26,16 @@ export const games = {
     {
       name: m["game.page.game_1.title"](),
       image: "/images/games/pexels-mart-production-8885140.jpg",
-      description: m["game.page.game_1.description"]()
+      description: [
+        {para: m["game.page.game_1.description.para_1"]()}, 
+        {para: m["game.page.game_1.description.para_2"]()}]
     },
     {
       name: m["game.page.game_2.title"](),
       image: "/images/games/pexels-mart-production-8885140.jpg",
-      description: m["game.page.game_2.description"]()
+      description: [
+        {para: m["game.page.game_2.description.para_1"]()}, 
+        {para: m["game.page.game_2.description.para_2"]()}]
     }
   ]
 }

@@ -20,7 +20,9 @@
             <div
                 class="overflow-scroll h-64 lg:h-auto lg:overflow-hidden indent-8 mx-2 lg:mx-8"
             >
-                <p>{description}</p>
+                {#each description as d}
+                    <p class="text-balance">{d.para}</p>
+                {/each}
             </div>
             <br />
             <ul class="menu menu-horizontal lg:mx-8 rounded-box content-center">
