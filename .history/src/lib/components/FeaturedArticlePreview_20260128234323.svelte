@@ -1,0 +1,49 @@
+<script lang="ts">
+    let { title, description, category, author, img, date, url } = $props();
+</script>
+
+<div class="card card-side bg-base-100 shadow-sm">
+  <figure>
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+      alt="Movie" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">New movie is released!</h2>
+    <p>Click the button to watch on Jetflix app.</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Watch</button>
+    </div>
+  </div>
+</div>
+
+<div
+    class="hero bg-neutral-900/35 rounded-md border border-neutral-900"
+>
+    <div class="hero-content flex-col lg:flex-row">
+        <img src={img} class="max-w-sm rounded-lg shadow-2xl" alt={title} />
+        <div>
+            <h1 class="text-5xl font-bold">
+                {title}
+            </h1>
+            <div class="pt-2">
+                <p class="">
+                    Posted on::
+                    {date}
+                </p>
+                <p class="">
+                    Posted by:
+                    {author}
+                </p>
+                <p>Category: {category}</p>
+            </div>
+
+            <p class="py-6">
+                {description}
+            </p>
+            <a class="btn btn-primary" href={url} aria-label={title}
+                >Read More</a
+            >
+        </div>
+    </div>
+</div>

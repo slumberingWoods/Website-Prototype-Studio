@@ -1,0 +1,35 @@
+<script lang="ts">
+    let { title, description, category, author, img, date, url } = $props();
+</script>
+
+<div class="card bg-neutral-900/35 w-72 shadow-sm">
+  <figure class="px-10 pt-10">
+    <img
+      src={img} alt={title}
+      class="rounded-xl" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Card Title</h2>
+    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+<div class="bg-neutral-900/35 rounded-md border border-neutral-900 my-4 mx-4 h-fit">
+    <div class="flex flex-col items-center justify-start mx-4 my-2 max-w-38">
+        <img class="max-w-48 max-h-36 my-2" src={img} alt={title} />
+        <div class="text-left mb-2">
+            <div class="flex-row">
+                <p class="text-sm">Posted on: {date}</p>
+                <div class="divider divider-horizontal"></div>
+                <p class="text-sm">Posted by: {author}</p>
+            </div>
+            <p class="text-2xl">{title}</p>
+            <p>{category}</p>
+            <div class="divider"></div>
+            <p class="pb-2">{description}</p>
+            <a href={url} aria-label={title} class="py-5 btn btn-sm btn-primary">Read More...</a>
+        </div>
+    </div>
+</div>
