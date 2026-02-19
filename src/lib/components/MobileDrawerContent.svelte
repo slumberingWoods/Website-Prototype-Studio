@@ -6,6 +6,7 @@
     import { page } from "$app/state";
     import Socials from "./Socials.svelte";
     let { updateDrawer = $bindable() } = $props();
+
 </script>
 
 <div class="drawer-side w-max-screen">
@@ -14,7 +15,7 @@
     <ul class="menu text-2xl bg-slate-900/95 min-h-full w-80 pl-10 pt-[74px]">
         <!-- Sidebar content here -->
         <li>
-            <div class="lg:ml-4">
+            <div class="drawerItem lg:ml-4">
                 <form method="POST" action={localizeHref("/")}>
                     <input
                         type="hidden"
@@ -31,13 +32,15 @@
         {#each navbar.list as link}
             {#if link.links == null}
                 <li>
-                    <a href={localizeHref(link.href)} onclick={updateDrawer}
-                        >{link.name}</a
-                    >
+                    <div class="drawerItem">
+                        <a href={localizeHref(link.href)} onclick={updateDrawer}
+                            >{link.name}</a
+                        >
+                    </div>
                 </li>
             {:else}
                 <li>
-                    <details>
+                    <details class="drawerItem">
                         <summary>{link.name}</summary>
                         <ul class="p-2 bg-slate-900">
                             {#each link.links as sublink}

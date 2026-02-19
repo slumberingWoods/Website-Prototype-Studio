@@ -6,11 +6,12 @@
     import { localizeHref } from "$lib/paraglide/runtime";
     import { m } from "$lib/paraglide/messages";
     import MobileDrawerContent from "$lib/components/MobileDrawerContent.svelte";
-
+    import gsap from 'gsap';
     let checked = $state(false);
+
         
     function handleClick() {
-        checked = !checked;
+        checked = !checked;      
     }
 </script>
 
