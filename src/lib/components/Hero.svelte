@@ -1,5 +1,8 @@
 <script lang="ts">
     let { title, motto } = $props();
+    import { onMount} from 'svelte';
+    import { gsap } from 'gsap';
+    import { SplitText } from "gsap/all";
 </script>
 
 <div class="hero-content text-neutral-content text-center">

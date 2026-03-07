@@ -3,7 +3,6 @@
     import { hero, newsletter } from "$lib/data/homePage";
     import Hero from "$lib/components/Hero.svelte";
     import NewsletterSub from "$lib/components/NewsletterSub.svelte";
-    import gsap from 'gsap';
     import FeaturedArticlePreview from "$lib/components/FeaturedArticlePreview.svelte";
     import { localizeHref } from "$lib/paraglide/runtime";
     const articles = import.meta.glob(`$lib/articles/*.{md,svx,svelte,md}`, {

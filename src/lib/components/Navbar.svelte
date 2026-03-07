@@ -1,15 +1,47 @@
 <script lang="ts">
     import { enhance } from "$app/forms";
+    import { onMount } from "svelte";
     import { m } from "../paraglide/messages";
     import { localizeHref } from "$lib/paraglide/runtime";
     import { page } from "$app/state";
     import { navbar } from "$lib/data/navigation";
     import Socials from "./Socials.svelte";
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    let showAnim: gsap.core.Tween;
+    let navbarElement: HTMLElement;
+
+    onMount(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        showAnim = gsap
+            .from(navbarElement, {
+                yPercent: -100,
+                paused: true,
+                duration: 0.2,
+            })
+            .progress(1);
+
+        const trigger = ScrollTrigger.create({
+            start: "top top",
+            end: "max",
+            onUpdate: (self: ScrollTrigger) => {
+                self.direction === -1 ? showAnim.play() : showAnim.reverse();
+            },
+        });
+
+        return () => {
+            trigger.kill();
+            showAnim?.kill();
+        };
+    });
 </script>
 
 <nav>
     <div
-        class="navbar h-20 lg:h-fit bg-slate-900 shadow-sm content-center w-max-screen"
+        bind:this={navbarElement}
+        class="navbar h-20 lg:h-fit bg-slate-900 shadow-sm content-center w-max-screen fixed transition ease-in-out z-40"
     >
         <div class="navbar-start flex lg:ml-6">
             <ul class="menu menu-horizontal lg:px-5 content-center">
