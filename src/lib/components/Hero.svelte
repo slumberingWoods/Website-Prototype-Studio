@@ -3,6 +3,8 @@
     import { onMount} from 'svelte';
     import { gsap } from 'gsap';
     import { SplitText } from "gsap/all";
+
+    let navbarElement: HTMLElement;
 </script>
 
 <div class="hero-content text-neutral-content text-center">

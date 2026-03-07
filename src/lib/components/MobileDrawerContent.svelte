@@ -7,6 +7,7 @@
     import Socials from "./Socials.svelte";
     let { updateDrawer = $bindable() } = $props();
 
+   
 </script>
 
 <div class="drawer-side w-max-screen">

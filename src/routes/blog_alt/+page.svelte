@@ -51,7 +51,7 @@
 </script>
 
 <div class="bg-gray-700">
-    <div class="mx-4 lg:mx-12 flex flex-col bg-slate-400 h-fit">
+    <div class="mx-4 lg:mx-12 flex flex-col bg-slate-400 mt-20 h-fit">
         <div class="mt-12 text-center">
             <p class="text-3xl lg:text-4xl">Featured Blog</p>
         </div>

@@ -1,5 +1,5 @@
 <div class="bg-gray-700">
-    <div class="mx-12 flex flex-col justify-center items-center bg-slate-400 h-screen">
+    <div class="mx-12 flex flex-col justify-center items-center bg-slate-400 mt-20 h-screen">
         <div class="content-center grow-7">
             <div class="text-center">
                 <p class="text-5xl">Website Prototype</p>

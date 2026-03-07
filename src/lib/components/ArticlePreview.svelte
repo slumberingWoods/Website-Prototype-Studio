@@ -4,7 +4,7 @@
 
 <div
     class="card bg-neutral-900/35 shadow-sm
-            w-full sm:w-20 lg:w-64 mx-auto"
+            w-full sm:w-80 lg:w-72 mx-auto"
 >
     <figure class="px-4 pt-4">
         <img
@@ -15,14 +15,14 @@
     </figure>
 
     <div class="card-body p-4 gap-3">
-        <div class="text-xs text-gray-300">
+        <div class="flex flex-wrap items-center gap-2 text-xs text-gray-300">
             <p>{date}</p>
             <p>By {author}</p>
         </div>
+        <p class="text-lg sm:text-xl font-semibold leading-snug">
+            {title}
+        </p>
         <div>
-            <p class="text-lg sm:text-xl font-semibold leading-snug">
-                {title}
-            </p>
             <span class="badge badge-primary badge-sm">
                 {category}
             </span>

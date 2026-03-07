@@ -12,7 +12,7 @@
 <div class="bg-gray-700">
     <article>
         <div
-            class="mx-4 lg:mx-12 flex flex-col items-center bg-slate-400 h-fit"
+            class="mx-4 lg:mx-12 flex flex-col items-center bg-slate-400 mt-20 h-fit"
         >
             <article>
                 <div class="text-left mx-2 my-8">
