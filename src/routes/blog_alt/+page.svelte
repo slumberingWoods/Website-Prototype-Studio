@@ -2,6 +2,8 @@
     import ArticlePreview from "$lib/components/ArticlePreview.svelte";
     import FeaturedArticlePreview from "$lib/components/FeaturedArticlePreview.svelte";
     import { localizeHref } from "$lib/paraglide/runtime";
+    let currentPage = 1;
+    let postsPerPage = 4;
     const articles = import.meta.glob(`$lib/articles/*.{md,svx,svelte,md}`, {
         eager: true,
     });
@@ -48,6 +50,11 @@
         );
     });
     let featured = date_sorted[0];
+    let totalPosts = date_sorted.length - 1;
+    let totalPages = Math.ceil(totalPosts / postsPerPage);
+    function setCurrentPage(newPage: number) {
+        currentPage = newPage;
+    }
 </script>
 
 <div class="bg-gray-700">
@@ -55,7 +62,7 @@
         <div class="mt-12 text-center">
             <p class="text-3xl lg:text-4xl">Featured Blog</p>
         </div>
-        <div class="pt-8 justify-center-safe">
+        <div class="pt-8 items-center justify-center-safe">
             <div>
                 <FeaturedArticlePreview
                     title={featured.metadata.title}
@@ -73,7 +80,7 @@
             <div
                 class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 lg:gap-4 my-10 px-4 sm:px-8 lg:px-12"
             >
-                {#each date_sorted.slice(1) as article}
+                {#each date_sorted.slice(1 + 4 * (currentPage - 1), 5 + 4 * (currentPage - 1)) as article}
                     {#if article.metadata.visible}
                         <ArticlePreview
                             title={article.metadata.title}
@@ -89,6 +96,29 @@
                     {/if}
                 {/each}
             </div>
+        </div>
+        <div class="join self-center mt-6 pb-10 w-fit">
+            {#if totalPages > 1}
+                {#if currentPage == 1}
+                    <button class="join-item btn btn-disabled">«</button>
+                {:else}
+                    <button
+                        class="join-item btn"
+                        on:click={() => setCurrentPage(currentPage - 1)}
+                        >«</button
+                    >
+                {/if}
+                <button class="join-item btn">Page {currentPage}</button>
+                {#if currentPage == totalPages}
+                    <button class="join-item btn btn-disabled">»</button>
+                {:else}
+                    <button
+                        class="join-item btn"
+                        on:click={() => setCurrentPage(currentPage + 1)}
+                        >»</button
+                    >
+                {/if}
+            {/if}
         </div>
     </div>
 </div>

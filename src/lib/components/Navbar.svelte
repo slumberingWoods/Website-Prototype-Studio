@@ -17,7 +17,7 @@
 
         showAnim = gsap
             .from(navbarElement, {
-                yPercent: -100,
+                yPercent: -300,
                 paused: true,
                 duration: 0.2,
             })
